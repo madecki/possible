@@ -1,0 +1,21 @@
+{
+  "name": "possible",
+  "version": "1.0.0",
+  "description": "possible recrutation task",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "possible"
+  ],
+  "author": "Radoslaw Madecki",
+  "license": "ISC"
+}
