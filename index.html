@@ -36,7 +36,7 @@
 
         <div id="team-members-wrapper">
 
-            <div id="big-image">
+            <div id="big-image" onmouseover="showHideInfo('show')" onmouseleave="showHideInfo()">
                 <div id="team-members-info">
                     <p id="member-name">Data unavaidable (enable JavaScript in your browser)</p>
                     <p id="member-position">Data unavaidable (enable JavaScript in your browser)</p>
@@ -44,16 +44,61 @@
             </div>
 
             <div id="team-members-list">
-                <img src="assets/img/arrow.png">
-                <div class="team-member-preview">
-                    <img src="assets/img/members/member1.jpg">
-                    <img src="assets/img/members/member2.jpg">
-                    <img src="assets/img/members/member3.jpg">
-                    <img src="assets/img/members/member4.jpg">
-                    <img src="assets/img/members/member5.jpg">
-                    <img src="assets/img/members/member6.jpg">
+                <img src="assets/img/arrow.png" onclick="model.setMember('previous')">
+
+                <div id="team-members-thumbnails">
+                    <img src="assets/img/members/member1.jpg" class="member"
+                         data-name="Jessica Steiner"
+                         data-position="GRAPHIC DESIGNER, POSSIBLE UK, LONDON"
+                         onclick="model.setMember(0)">
+
+                    <img src="assets/img/members/member2.jpg" class="member"
+                         data-name="Sarah Statham"
+                         data-position="CFO, POSSIBLE UK, LONDON"
+                         onclick="model.setMember(1)">
+
+                    <img src="assets/img/members/member3.jpg" class="member"
+                         data-name="Justin Cooke"
+                         data-position="CEO, POSSIBLE UK, LONDON"
+                         onclick="model.setMember(2)">
+
+                    <img src="assets/img/members/member4.jpg" class="member"
+                         data-name="Christopher Casey"
+                         data-position="AGILE MASTER, POSSIBLE USA, NY"
+                         onclick="model.setMember(3)">
+
+                    <img src="assets/img/members/member5.jpg" class="member"
+                         data-name="Mark Smith"
+                         data-position="PROJECT MANAGER, POSSIBLE USA, NY"
+                         onclick="model.setMember(4)">
+
+                    <img src="assets/img/members/member6.jpg" class="member"
+                         data-name="Andrzej Niewiadomy"
+                         data-position="SALES MANAGER, POSSIBLE PL, KATOWICE"
+                         onclick="model.setMember(5)">
+
+                    <img src="assets/img/members/member7.jpg" class="member"
+                         data-name="Radosław Madecki"
+                         data-position="FRONTEND DEV, POSSIBLE PL, KATOWICE"
+                         onclick="model.setMember(6)">
+
+                    <img src="assets/img/members/member8.jpg" class="member"
+                         data-name="Piotr Palarz"
+                         data-position="FULLSTACK DEV, POSSIBLE PL, WARSAW"
+                         onclick="model.setMember(7)">
+
+                    <img src="assets/img/members/member9.jpg" class="member"
+                         data-name="Arkov Silnowvoliev"
+                         data-position="SALES MANAGER, POSSIBLE RU, MOSCOW"
+                         onclick="model.setMember(8)">
+
+                    <img src="assets/img/members/member10.jpg" class="member"
+                         data-name="Alessandra Konopsky"
+                         data-position="GRAPHIC DESIGNER, POSSIBLE PL, KATOWICE"
+                         onclick="model.setMember(9)">
                 </div>
-                <img src="assets/img/arrow.png">
+
+                <img src="assets/img/arrow.png" onclick="model.setMember('next')">
             </div>
 
         </div>
@@ -82,6 +127,8 @@
         <span>Contact Us</span>
     </div>
 </footer>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
